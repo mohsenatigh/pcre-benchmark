@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'pcre.PcreTest'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'pcre.PcreTest'
+        )
+    }
+}
+
+dependencies {
+    //implementation "joda-time:joda-time:2.2"
+    //testImplementation "junit:junit:4.12"
+}
